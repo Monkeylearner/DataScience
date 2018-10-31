@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WeatherPy Visualization</title>
+  <link rel="stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href = "styles.css">
+  <style>
+    body {background-color:rgb(226, 225, 225)}
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="index.html">Lattitude</a>
+      </div>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="Max_Temperature.html">Max Temperature</a></li>
+                <li><a href="Humidity.html">Humidity</a></li>
+                <li><a href="Cloudiness.html">Cloudiness</a></li>
+                <li><a href="Wind_Speed.html">Wind Speed</a></li>
+              </ul>
+          </li>
+          <li><a href="comparison.html">Comparison</a></li>
+          <li><a href="data.html">Data</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <br>
+  <br>
+  <br>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-sm-12">
+        <h1>Cloudiness</h1>
+        <hr>
+        <img src="Latitude_vs_Cloudiness.png" alt="cloudiness" height="400" width="600" align="center">
+        <p>There is no significant differences of cloudiness in cities with different latitude.
+        </p>
+      </div>
+      <div class="col-md-4 col-sm-12">
+        <h2>Visualizations</h2>
+        <hr>
+        <div class= "col-md-6 col-sm-3">
+          <img id ="pic1" src="Latitude_vs_Max_Temperature.png" alt="maxtemp" height="150" width="150"> 
+        </div> 
+        <div class= "col-md-6 col-sm-3">
+          <img id = "pic2" src="Latitude_vs_Humidity.png" alt="humidity" height="150" width="150">
+        </div> 
+        <div class= "col-md-6 col-sm-3">
+          <img class = "boxx"  id = "pic3" src="Latitude_vs_Cloudiness.png" alt="cloudiness" height="150" width="150">
+        </div> 
+        <div class= "col-md-6 col-sm-3">
+          <img id = "pic4" src="Latitude_vs_Wind_Speed.png" alt="windspeed" height="150" width="150">
+        </div> 
+      </div>
+</div>
+</div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</html>

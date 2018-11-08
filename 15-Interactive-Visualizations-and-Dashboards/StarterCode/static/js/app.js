@@ -14,9 +14,9 @@ function buildMetadata(sample) {
     // Use `Object.entries` to add each key and value pair to the panel
     // Hint: Inside the loop, you will need to use d3 to append new
     // tags for each key-value in the metadata.
-    Object.entries(data).forEach(function([key, value]) {
-      var cell = sample_metadata.append("p");
-      cell.text(key + ": " + value);
+    Object.entries(data).forEach(([key, value]) => {
+        var cell = metadataPanel.append("p");
+        cell.text(key + ": " + value);
     });
   });
 }
